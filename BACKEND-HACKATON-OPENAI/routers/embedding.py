@@ -180,7 +180,7 @@ def split_into_many(text, max_tokens):
 def embedding_processing(parrafos):
     #api_url = "https://api.openai.com/v1/embeddings"
     openai_embedding_model = "text-embedding-ada-002"
-    openai.api_key  = "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"
+    openai.api_key  = "INSERT_YOU_API_KEY"
     parrafos['embeddings'] = parrafos.text.apply(lambda x: openai.Embedding.create(input=x, engine=openai_embedding_model)['data'][0]['embedding'])
     parrafos.to_csv('embeddings.csv')
     parrafos=pd.read_csv('embeddings.csv', index_col=0)
@@ -198,7 +198,7 @@ def create_context(
     """
 
     # Get the embeddings for the question
-    openai.api_key  = "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"
+    openai.api_key  = "INSERT_YOU_API_KEY"
     q_embeddings = openai.Embedding.create(input=question, engine='text-embedding-ada-002')['data'][0]['embedding']
 
     # Get the distances from the embeddings
@@ -256,7 +256,7 @@ def answer_question(
 
     try:
         # Create a completions using the questin and context
-        openai.api_key  = "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"
+        openai.api_key  = "INSERT_YOU_API_KEY"
         response = openai.Completion.create(
             prompt=f"Responde la pregunta basado en el siguiente contexto, y si no sabes la respuesta dime  \"Eres un puto genio\"\n\nContexto: {context}\n\n---\n\nPreguntan: {question}\nRespuesta:",
             temperature=0,
