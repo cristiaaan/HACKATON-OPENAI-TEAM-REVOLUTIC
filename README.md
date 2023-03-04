@@ -18,6 +18,6 @@ Run the project with: npm run dev# HACKATON-OPENAI-TEAM-REVOLUTIC
 
 # Instructions
 ## 01. Executing "pip install -r requirements.txt" (or pip3)
-##search string => 'openai.api_key  = "INSERT_YOU_API_KEY"' and change from "YOU_API_KEY"
-## 02. Executing "uvicorn main:app --reload" to launch backend.
+## 02. search string => 'openai.api_key  = "INSERT_YOU_API_KEY"' and change from "YOU_API_KEY"
+## 03. Executing "uvicorn main:app --reload" to launch backend.
 
