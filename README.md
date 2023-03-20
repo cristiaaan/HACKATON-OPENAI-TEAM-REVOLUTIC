@@ -19,5 +19,6 @@ Run the project with: npm run dev# HACKATON-OPENAI-TEAM-REVOLUTIC
 # Instructions
 ## 01. Executing "pip install -r requirements.txt" (or pip3)
 ## 02. search string => 'openai.api_key  = "INSERT_YOU_API_KEY"' and change from "YOU_API_KEY"
-## 03. Executing "uvicorn main:app --reload" to launch backend.
+## 03. Create directory /static on root path this proyect
+## 04. Executing "uvicorn main:app --reload" to launch backend.
 
